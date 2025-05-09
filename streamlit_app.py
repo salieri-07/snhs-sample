@@ -1,6 +1,12 @@
 import streamlit as st
 
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
+st.title("ㅇㅅㅎ의 첫 번째 앱")
+st.info("안녕하세요 반갑습니다. 저는 ~입니다.")
+st.write("안녕하세요 반갑습니다. 저는 ~입니다.")
+
+st.markdown("---") 
+st.warning("⚠️ 1000이상을 만드세요.")
+
+if st.button("증가"):
+st.session_state.count += 1
+st.write("현재숫자":", st.session_state.count)
