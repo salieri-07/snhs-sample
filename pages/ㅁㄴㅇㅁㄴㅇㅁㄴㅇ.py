@@ -1,7 +1,6 @@
 import streamlit as st
 from openai import OpenAI
 
-
 # 페이지 기본 설정
 st.set_page_config(page_title="나이별 조언 GPT", page_icon="🤖", layout="centered")
 
@@ -58,13 +57,6 @@ if user_api_key and prompt:
     except Exception as e:
         st.error(f"❌ 에러 발생: {e}")
 
-
-
-
-
-
-
-
-
-
-
+# 푸터
+st.markdown("---")
+st.caption("🧠 Made with ❤️ by Streamlit 초보 but 열정 가득한 개발자")
